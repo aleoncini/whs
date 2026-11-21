@@ -63,12 +63,12 @@
                     <input type="date" class="form-control" id="dateInput">
                 </div>
                 <div class="mb-3">
-                    <label for="courseInput" class="form-label">Campo</label>
-                    <input type="text" class="form-control" id="courseInput">
-                </div>
-                <div class="mb-3">
                     <label for="tournamentInput" class="form-label">Gara</label>
                     <input type="text" class="form-control" id="tournamentInput">
+                </div>
+                <div class="mb-3">
+                    <label for="courseInput" class="form-label">Campo</label>
+                    <input type="text" class="form-control" id="courseInput">
                 </div>
                 <div class="mb-3">
                     <label for="stbInput" class="form-label">Risultato Stableford</label>
@@ -101,6 +101,7 @@
         $('#saveScoreButton').click(function(){
             $("#scoreForm").modal('hide');
             var result = {};
+            result.id = "id" + Math.random().toString(16).slice(2);
 
             if ($('#dateInput').val().length == 0) {
                 setAlert('Attenzione: data non valida');
@@ -141,7 +142,15 @@
 
         $(document).on("click", ".delete_result", function () {
             var results = JSON.parse(localStorage.getItem("whsResults"));
-            results.splice(this.dataset.id, 1);
+            console.log(this.dataset.id);
+            for(i=0; i<results.length; i++){
+                if(results[i].id == this.dataset.id){
+                    console.log('got element at index ' + i);
+                    results.splice(i, 1);
+                }
+            }
+            //console.log(results);
+            //results.splice(this.dataset.id, 1);
             localStorage.setItem('whsResults', JSON.stringify(results));
             $(this).parent().remove();
         });

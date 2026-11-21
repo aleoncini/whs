@@ -20,79 +20,75 @@
 <body style="padding-top: 3.5rem">
 
   <div class="col-lg-8 mx-auto p-4 py-md-5">
-      <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-          <a href="https://www.federgolf.it/news/world-handicap-system-attivo-in-italia/"
-              class="d-flex align-items-center text-body-emphasis text-decoration-none">
-              <span class="fs-4"><img src="img/golfball_transp.png" width="32" height="32"><img src="img/transparent_spacer.png" width="16" height="32">World Handicap System</span>
-          </a>
-      </header>
+    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+      <a href="https://www.federgolf.it/news/world-handicap-system-attivo-in-italia/"
+          class="d-flex align-items-center text-body-emphasis text-decoration-none">
+          <span class="fs-4"><img src="img/golfball_transp.png" width="32" height="32"><img src="img/transparent_spacer.png" width="16" height="32">World Handicap System</span>
+      </a>
+    </header>
 
-      <main>
-          <h1 class="text-body-emphasis">Pianifica il tuo Score</h1>
-          <p class="fs-5 col-md-8">Se vuoi sapere come cambierà il tuo HCP in base al risultato della tua prossima gara sei nel posto giusto.
-          Memorizza i tuoi risultati e potrai analizzare come cambierà il tuo HCP dalla gara successiva.</p>
-          <div class="mb-5">
-              <a href="./results.html" class="btn btn-lg btn-primary" role="button">Aggiungi Risultato &raquo;</a>
+    <main>
+      <h1 class="text-body-emphasis">Pianifica il tuo Score</h1>
+      <p class="fs-5 col-md-8">Se vuoi sapere come cambierà il tuo HCP in base al risultato della tua prossima gara sei nel posto giusto.
+      Memorizza i tuoi risultati e potrai analizzare come cambierà il tuo HCP dalla gara successiva.</p>
+      <div class="mb-5">
+          <a href="./results.html" class="btn btn-lg btn-primary" role="button">Aggiungi Risultato &raquo;</a>
+      </div>
+      <hr class="col-3 col-md-2 mb-5">
+      <div class="row g-5">
+        <div class="col-md-6">
+          <h2 class="text-body-emphasis">Handicap attuale <span id="txt_hcp"></span></h2>
+          <p>Nella prossima gara, per migliorare il tuo hcp, devi ottenere un punteggio stableford migliore di <span id="txt_lowstb"></span>.</p>
+          <p>Con la prossima gara uscirà dal calcolo un risultato di <span id="txt_exitstb"></span>.</p>
+          <p>Il risultato uscente <span id="txt_isvalid"></span> uno dei tuoi 8 migliori.</p>
+          <ul class="list-unstyled ps-0">
+              <li><a class="icon-link mb-1" href="./bck.html"><use xlink:href="#arrow-right-circle"></use>Backup & Restore</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+            <h2 class="text-body-emphasis">Guide</h2>
+            <p>L'utilizzo di questa applicazione web dovrebbe essere molto semplice ed intuitivo, ma se serve un aiutino prova a consultare le guide di seguito.</p>
+            <ul class="list-unstyled ps-0">
+                <li> <a class="icon-link mb-1" href="./userguide.html"> <svg class="bi"
+                            width="16" height="16" aria-hidden="true">
+                            <use xlink:href="#arrow-right-circle"></use>
+                        </svg>
+                        Guida all'uso
+                    </a> </li>
+                <li> <a class="icon-link mb-1" href="./notes.html"> <svg class="bi"
+                            width="16" height="16" aria-hidden="true">
+                            <use xlink:href="#arrow-right-circle"></use>
+                        </svg>
+                        Note tecniche
+                    </a> </li>
+            </ul>
           </div>
-          <hr class="col-3 col-md-2 mb-5">
-          <div class="row g-5">
-              <div class="col-md-6">
-                  <h2 class="text-body-emphasis">Handicap attuale</h2>
-                  <p>Ready to go beyond the starter template? Check out these open source projects that you can
-                      quickly duplicate to a new GitHub repository.</p>
-                  <ul class="list-unstyled ps-0">
-                      <li> <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/icons-font"
-                              rel="noopener" target="_blank"> <svg class="bi" width="16" height="16"
-                                  aria-hidden="true">
-                                  <use xlink:href="#arrow-right-circle"></use>
-                              </svg>
-                              Bootstrap npm starter
-                          </a> </li>
-                      <li> <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/parcel"
-                              rel="noopener" target="_blank"> <svg class="bi" width="16" height="16"
-                                  aria-hidden="true">
-                                  <use xlink:href="#arrow-right-circle"></use>
-                              </svg>
-                              Bootstrap Parcel starter
-                          </a> </li>
-                      <li> <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/vite"
-                              rel="noopener" target="_blank"> <svg class="bi" width="16" height="16"
-                                  aria-hidden="true">
-                                  <use xlink:href="#arrow-right-circle"></use>
-                              </svg>
-                              Bootstrap Vite starter
-                          </a> </li>
-                      <li> <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/webpack"
-                              rel="noopener" target="_blank"> <svg class="bi" width="16" height="16"
-                                  aria-hidden="true">
-                                  <use xlink:href="#arrow-right-circle"></use>
-                              </svg>
-                              Bootstrap Webpack starter
-                          </a> </li>
-                  </ul>
-              </div>
-              <div class="col-md-6">
-                  <h2 class="text-body-emphasis">Guide</h2>
-                  <p>L'utilizzo di questa applicazione web dovrebbe essere molto semplice ed intuitivo, ma se serve un aiutino prova a consultare le guide di seguito.</p>
-                  <ul class="list-unstyled ps-0">
-                      <li> <a class="icon-link mb-1" href="./userguide.html"> <svg class="bi"
-                                  width="16" height="16" aria-hidden="true">
-                                  <use xlink:href="#arrow-right-circle"></use>
-                              </svg>
-                              Guida all'uso
-                          </a> </li>
-                      <li> <a class="icon-link mb-1" href="./notes.html"> <svg class="bi"
-                                  width="16" height="16" aria-hidden="true">
-                                  <use xlink:href="#arrow-right-circle"></use>
-                              </svg>
-                              Note tecniche
-                          </a> </li>
-                  </ul>
-              </div>
-          </div>
-      </main>
+        </div>
+    </main>
 
     </div>
+
+<!-- JavaScript libraries-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/whs.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready(function () {
+    var info = getInfo();
+    console.log(info.exitIsValid);
+    $('#txt_hcp').html(info.hcp);
+    $('#txt_lowstb').html(info.lowerStb);
+    $('#txt_exitstb').html(info.exitStb);
+    if(info.exitIsValid){
+      $('#txt_isvalid').html('è');
+    } else {
+      $('#txt_isvalid').html('NON è');
+    }
+  });
+
+</script>
 
 </body>
 </html>
